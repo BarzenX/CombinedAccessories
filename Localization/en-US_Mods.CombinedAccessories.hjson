@@ -1,0 +1,52 @@
+# This file will automatically update with entries for new content after a build and reload
+
+Items: {
+	AncientTerraBlade: {
+		DisplayName: Ancient Terra Blade
+		Tooltip:
+			'''
+			Shoots old Terrablade beams
+			"The child of the great blade, with a marking resemblance to the ol' reliable"
+			'''
+	}
+
+	SurvivorsGear: {
+		DisplayName: Vitality Shield
+		Tooltip:
+			'''
+			Combined effects of Ankh Shield, Philosopher's Stone, Hero's Shield and Putrid Scent
+			10% increased damage and critical strike chance
+			"Contains instructions for CPR"
+			'''
+	}
+
+	MobilityBoots: {
+		DisplayName: Mobility Boots
+		Tooltip:
+			'''
+			Combined effects of Tabi, Frog Gear, Lucky Horseshoe and Terraspark Boots 
+			Provides imunity to lava
+			"Weirdly silent..."
+			'''
+	}
+
+	CelestialGloves: {
+		DisplayName: Celestial Gloves
+		Tooltip:
+			'''
+			Combined effects of Fire Gautlet and Flesh Knuckles
+			49% increased damage and 8% increased critical strike chance
+			"Strangely comfortable for combat gloves"
+			'''
+	}
+
+	GodslayerGear: {
+		DisplayName: Godslayer Gear
+		Tooltip:
+			'''
+			Combined effects of Mobility Boots, Vitality Shield, Celestial Gloves, Hand of Creation and Soaring Insignia
+			Everything you could ever need, in a single accessory slot
+			"Step Stool not included"
+			'''
+	}
+}
