@@ -4,7 +4,7 @@ using Terraria.ID;
 
 namespace CombinedAccessories.Items.Accesories;
 
-public class survivorsGear : ModItem
+public class VitalityShield : ModItem
 {
 	public override void SetDefaults()
 	{
@@ -20,6 +20,8 @@ public class survivorsGear : ModItem
 		//IL_00aa: Unknown result type (might be due to invalid IL or missing references)
 		//IL_00b4: Unknown result type (might be due to invalid IL or missing references)
 		//IL_00b9: Unknown result type (might be due to invalid IL or missing references)
+
+		// Ankh Shield
 		player.noKnockback = true;
         player.buffImmune[BuffID.Bleeding] = true;
         player.buffImmune[BuffID.BrokenArmor] = true;
@@ -33,19 +35,26 @@ public class survivorsGear : ModItem
         player.buffImmune[BuffID.Weak] = true;
         player.buffImmune[BuffID.Chilled] = true;
         player.buffImmune[BuffID.Stoned] = true;
-		player.pStone = true;
-		player.lifeRegen += 3;
+
+        // Charm of Myths
+        player.pStone = true;
+		player.lifeRegen += 1;
+
+		// Hero Shield
 		player.hasPaladinShield = true;
-		ref StatModifier damage = ref player.GetDamage(DamageClass.Generic);
+
+        // Hero Shield + Flesh Knuckels
+        ref StatModifier damage = ref player.GetDamage(DamageClass.Generic);
 		damage += 0.1f;
 		player.GetCritChance(DamageClass.Generic) += 0.1f;
-	}
+        // Flesh Knuckels aggro -400 and Hero Shield aggro + 400 = 0 aggro change
+    }
 
 	public override void AddRecipes()
 	{
 		Recipe obj = ((ModItem)this).CreateRecipe(1);
 		obj.AddIngredient(ItemID.AnkhShield, 1);
-		obj.AddIngredient(ItemID.PhilosophersStone, 1);
+		obj.AddIngredient(ItemID.CharmofMyths, 1);
 		obj.AddIngredient(ItemID.HeroShield, 1);
 		obj.AddIngredient(ItemID.PutridScent, 1);
 		obj.AddTile(TileID.TinkerersWorkbench);

@@ -10,12 +10,14 @@ Items: {
 			'''
 	}
 
-	SurvivorsGear: {
+	VitalityShield: {
 		DisplayName: Vitality Shield
 		Tooltip:
 			'''
-			Combined effects of Ankh Shield, Philosopher's Stone, Hero's Shield and Putrid Scent
+			Combined effects of Ankh Shield, Charm of Myths, Hero Shield and Putrid Scent
 			10% increased damage and critical strike chance
+			Enemies are not less or more likely to target you
+
 			"Contains instructions for CPR"
 			'''
 	}
@@ -26,6 +28,7 @@ Items: {
 			'''
 			Combined effects of Tabi, Frog Gear, Lucky Horseshoe and Terraspark Boots 
 			Provides imunity to lava
+
 			"Weirdly silent..."
 			'''
 	}
@@ -34,8 +37,11 @@ Items: {
 		DisplayName: Celestial Gloves
 		Tooltip:
 			'''
-			Combined effects of Fire Gautlet and Flesh Knuckles
-			49% increased damage and 8% increased critical strike chance
+			Combined effects of Fire Gautlet, Eye of the Golem and Flesh Knuckles
+			Increases melee knockback
+			12% increased damage and speed
+			8% increased critical strike chance
+
 			"Strangely comfortable for combat gloves"
 			'''
 	}
@@ -45,7 +51,12 @@ Items: {
 		Tooltip:
 			'''
 			Combined effects of Mobility Boots, Vitality Shield, Celestial Gloves, Hand of Creation and Soaring Insignia
-			Everything you could ever need, in a single accessory slot
+			Everything you could ever need, in a single accessory slot!
+			Increases melee knockback
+			20% increased damage
+			12% increased speed
+			16% increased critical strike chance
+
 			"Step Stool not included"
 			'''
 	}

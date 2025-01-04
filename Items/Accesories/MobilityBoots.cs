@@ -4,7 +4,7 @@ using Terraria.ID;
 
 namespace CombinedAccessories.Items.Accesories;
 
-public class mobilityBoots : ModItem
+public class MobilityBoots : ModItem
 {
 	public override void SetDefaults()
 	{
@@ -16,13 +16,20 @@ public class mobilityBoots : ModItem
 
 	public override void UpdateAccessory(Player player, bool hideVisual)
 	{
+		// Tabi
 		player.dashType = 1;
-		player.frogLegJumpBoost = true;
-		player.autoJump = true;
+
+        // Frog Gear
         player.accFlipper = true;
         player.spikedBoots = 2;
-		player.noFallDmg = true;
-		player.rocketBoots = 4;
+        player.frogLegJumpBoost = true;
+		player.autoJump = true;
+
+        // Lucky Horseshoe
+        player.noFallDmg = true;
+
+        // Terraspark Boots
+        player.rocketBoots = 4;
 		player.maxRunSpeed = 7f;
 		player.runAcceleration = 0.25f;
 		player.iceSkate = true;
