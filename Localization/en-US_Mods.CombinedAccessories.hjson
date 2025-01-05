@@ -5,7 +5,7 @@ Items: {
 		DisplayName: Ancient Terra Blade
 		Tooltip:
 			'''
-			Shoots old Terrablade beams
+			Shoots old {$ItemName.TerraBlade} beams
 			"The child of the great blade, with a marking resemblance to the ol' reliable"
 			'''
 	}
@@ -14,7 +14,7 @@ Items: {
 		DisplayName: Vitality Shield
 		Tooltip:
 			'''
-			Combined effects of Ankh Shield, Charm of Myths, Hero Shield and Putrid Scent
+			Combined effects of {$ItemName.AnkhShield}, {$ItemName.CharmofMyths}, {$ItemName.HeroShield} and {$ItemName.PutridScent}
 			10% increased damage and critical strike chance
 			Enemies are not less or more likely to target you
 
@@ -26,7 +26,7 @@ Items: {
 		DisplayName: Mobility Boots
 		Tooltip:
 			'''
-			Combined effects of Tabi, Frog Gear, Lucky Horseshoe and Terraspark Boots 
+			Combined effects of {$ItemName.Tabi}, {$ItemName.FrogGear}, {$ItemName.LuckyHorseshoe} and {$ItemName.TerrasparkBoots}
 			Provides imunity to lava
 
 			"Weirdly silent..."
@@ -37,7 +37,7 @@ Items: {
 		DisplayName: Celestial Gloves
 		Tooltip:
 			'''
-			Combined effects of Fire Gautlet, Eye of the Golem and Flesh Knuckles
+			Combined effects of {$ItemName.FireGauntlet}, {$ItemName.EyeoftheGolem} and {$ItemName.FleshKnuckles}
 			Increases melee knockback
 			12% increased damage and speed
 			8% increased critical strike chance
@@ -50,14 +50,14 @@ Items: {
 		DisplayName: Godslayer Gear
 		Tooltip:
 			'''
-			Combined effects of Mobility Boots, Vitality Shield, Celestial Gloves, Hand of Creation and Soaring Insignia
+			Combined effects of {$Mods.CombinedAccessories.Items.MobilityBoots.DisplayName}, {$Mods.CombinedAccessories.Items.VitalityShield.DisplayName}, {$Mods.CombinedAccessories.Items.CelestialGloves.DisplayName}, {$ItemName.HandOfCreation} and {$ItemName.EmpressFlightBooster}
 			Everything you could ever need, in a single accessory slot!
 			Increases melee knockback
 			20% increased damage
 			12% increased speed
 			16% increased critical strike chance
 
-			"Step Stool not included"
+			"{$ItemName.PortableStool} not included"
 			'''
 	}
 }
