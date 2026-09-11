@@ -4,15 +4,17 @@ using Terraria.ID;
 
 namespace CombinedAccessories.Items.Accesories;
 
+[AutoloadEquip(EquipType.Shield)]
+//TODO: "*_Shoes.png" needs spriting
 public class VitalityShield : ModItem
 {
 	public override void SetDefaults()
 	{
-		((ModItem)this).Item.accessory = true;
-		((Entity)((ModItem)this).Item).width = 22;
-		((Entity)((ModItem)this).Item).height = 22;
-		((ModItem)this).Item.defense = 10;
-		((ModItem)this).Item.rare = ItemRarityID.Yellow;
+		Item.accessory = true;
+		Item.width = 22;
+        Item.height = 22;
+		Item.defense = 10;
+        Item.rare = ItemRarityID.Yellow;
 	}
 
 	public override void UpdateAccessory(Player player, bool hideVisual)
@@ -43,20 +45,19 @@ public class VitalityShield : ModItem
 		// Hero Shield
 		player.hasPaladinShield = true;
 
-        // Hero Shield + Flesh Knuckels
-        ref StatModifier damage = ref player.GetDamage(DamageClass.Generic);
-		damage += 0.1f;
-		player.GetCritChance(DamageClass.Generic) += 0.1f;
-        // Flesh Knuckels aggro -400 and Hero Shield aggro + 400 = 0 aggro change
+        // Hero Shield + Flesh Knuckles
+        player.GetDamage(DamageClass.Generic) += 0.1f; ;
+        player.GetCritChance(DamageClass.Generic) += 0.1f;
+        // Flesh Knuckles aggro -400 and Hero Shield aggro + 400 = 0 aggro change
     }
 
-	public override void AddRecipes()
+    public override void AddRecipes()
 	{
-		Recipe obj = ((ModItem)this).CreateRecipe(1);
-		obj.AddIngredient(ItemID.AnkhShield, 1);
-		obj.AddIngredient(ItemID.CharmofMyths, 1);
-		obj.AddIngredient(ItemID.HeroShield, 1);
-		obj.AddIngredient(ItemID.PutridScent, 1);
+		Recipe obj = CreateRecipe();
+		obj.AddIngredient(ItemID.AnkhShield);
+		obj.AddIngredient(ItemID.CharmofMyths);
+		obj.AddIngredient(ItemID.HeroShield);
+		obj.AddIngredient(ItemID.PutridScent);
 		obj.AddTile(TileID.TinkerersWorkbench);
 		obj.Register();
 	}

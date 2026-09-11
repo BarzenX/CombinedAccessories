@@ -8,10 +8,10 @@ public class MobilityBoots : ModItem
 {
 	public override void SetDefaults()
 	{
-		((ModItem)this).Item.accessory = true;
-		((Entity)((ModItem)this).Item).width = 22;
-		((Entity)((ModItem)this).Item).height = 22;
-		((ModItem)this).Item.rare = ItemRarityID.Yellow;
+		Item.accessory = true;
+		Item.width = 22;
+        Item.height = 22;
+		Item.rare = ItemRarityID.Yellow;
 	}
 
 	public override void UpdateAccessory(Player player, bool hideVisual)
@@ -41,11 +41,11 @@ public class MobilityBoots : ModItem
 
 	public override void AddRecipes()
 	{
-		Recipe obj = ((ModItem)this).CreateRecipe(1);
-		obj.AddIngredient(ItemID.Tabi, 1);
-		obj.AddIngredient(ItemID.FrogGear, 1);
-		obj.AddIngredient(ItemID.LuckyHorseshoe, 1);
-		obj.AddIngredient(ItemID.TerrasparkBoots, 1);
+		Recipe obj = CreateRecipe();
+		obj.AddIngredient(ItemID.Tabi);
+		obj.AddIngredient(ItemID.FrogGear);
+		obj.AddIngredient(ItemID.LuckyHorseshoe);
+		obj.AddIngredient(ItemID.TerrasparkBoots);
 		obj.AddTile(TileID.TinkerersWorkbench);
 		obj.Register();
 	}

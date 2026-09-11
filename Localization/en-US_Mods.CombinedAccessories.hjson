@@ -16,7 +16,7 @@ Items: {
 			'''
 			Combined effects of {$ItemName.AnkhShield}, {$ItemName.CharmofMyths}, {$ItemName.HeroShield} and {$ItemName.PutridScent}
 			10% increased damage and critical strike chance
-			Enemies are not less or more likely to target you
+			Enemies are neither less nor more likely to target you
 
 			"Contains instructions for CPR"
 			'''
@@ -27,7 +27,7 @@ Items: {
 		Tooltip:
 			'''
 			Combined effects of {$ItemName.Tabi}, {$ItemName.FrogGear}, {$ItemName.LuckyHorseshoe} and {$ItemName.TerrasparkBoots}
-			Provides imunity to lava
+			Provides immunity to lava
 
 			"Weirdly silent..."
 			'''

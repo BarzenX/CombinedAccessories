@@ -8,11 +8,11 @@ public class CelestialGloves : ModItem
 {
 	public override void SetDefaults()
 	{
-		((ModItem)this).Item.accessory = true;
-		((Entity)((ModItem)this).Item).width = 22;
-		((Entity)((ModItem)this).Item).height = 22;
-		((ModItem)this).Item.defense = 8;
-		((ModItem)this).Item.rare = ItemRarityID.Yellow;
+		Item.accessory = true;
+		Item.width = 22;
+		Item.height = 22;
+		Item.defense = 8;
+        Item.rare = ItemRarityID.Yellow;
 	}
 
 	public override void UpdateAccessory(Player player, bool hideVisual)
@@ -25,10 +25,8 @@ public class CelestialGloves : ModItem
         //IL_003b: Unknown result type (might be due to invalid IL or missing references)
 
 		// Mechanical Glove
-        ref StatModifier knockback = ref player.GetKnockback(DamageClass.Generic);
-        knockback += 1f;
-        ref StatModifier damage = ref player.GetDamage(DamageClass.Generic);
-		damage += 0.12f;
+		player.GetKnockback(DamageClass.Generic) += 1f;
+        player.GetDamage(DamageClass.Generic) += 0.12f;
         player.GetAttackSpeed(DamageClass.Generic) += 0.12f;
         player.GetCritChance(DamageClass.Generic) += 0.08f;
 
@@ -44,10 +42,10 @@ public class CelestialGloves : ModItem
 
 	public override void AddRecipes()
 	{
-		Recipe obj = ((ModItem)this).CreateRecipe(1);
-		obj.AddIngredient(ItemID.FireGauntlet, 1);
-        obj.AddIngredient(ItemID.EyeoftheGolem, 1);
-        obj.AddIngredient(ItemID.FleshKnuckles, 1);
+		Recipe obj = CreateRecipe();
+		obj.AddIngredient(ItemID.FireGauntlet);
+        obj.AddIngredient(ItemID.EyeoftheGolem);
+        obj.AddIngredient(ItemID.FleshKnuckles);
 		obj.AddTile(TileID.TinkerersWorkbench);
 		obj.Register();
 	}
